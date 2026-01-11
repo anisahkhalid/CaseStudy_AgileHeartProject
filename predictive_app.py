@@ -113,8 +113,8 @@ if "results" in st.session_state:
 
     if st.button("Submit Feedback & Log"):
         # Log both predictions with the same feedback
-        log_prediction("v1", r["latency_v1"], r["pred_v1"], r["prob_v1"], feedback_score, feedback_comment)
-        log_prediction("v2", r["latency_v2"], r["pred_v2"], r["prob_v2"], feedback_score, feedback_comment)
+        log_prediction("v2_ui", "v1", r["latency_v1"], r["pred_v1"], r["prob_v1"], feedback_score, feedback_comment)
+        log_prediction("v2_ui", "v2", r["latency_v2"], r["pred_v2"], r["prob_v2"], feedback_score, feedback_comment)
 
         st.success("Saved feedback + predictions to logs/monitoring_logs.csv ✅")
 

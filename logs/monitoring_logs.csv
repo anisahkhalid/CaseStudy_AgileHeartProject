@@ -1,9 +1,11 @@
-timestamp,model_version,latency_ms,prediction,probability,feedback_score,feedback_comment
-2026-01-11T12:09:59,v1,48.07,1,0.9124,4,Prediction looks reasonable for high-risk profile
-2026-01-11T12:09:59,v2,208.24,1,0.9099,4,Prediction looks reasonable for high-risk profile
-2026-01-11T15:20:14,v1,109.83,1,0.9825,2,Confusing UI. I am asked to give feedback before seeing any prediction result.
-2026-01-11T15:20:14,v2,239.42,1,0.9397,2,Confusing UI. I am asked to give feedback before seeing any prediction result.
-2026-01-11T15:21:03,v1,23.57,1,0.6744,2,Not intuitive. I would prefer to see the model output first before rating it.
-2026-01-11T15:21:03,v2,230.91,1,0.6205,2,Not intuitive. I would prefer to see the model output first before rating it.
-2026-01-11T15:21:59,v1,15.06,1,0.8485,3,"The workflow should be prediction first, then feedback. Current layout is unclear."
-2026-01-11T15:21:59,v2,193.44,1,0.5303,3,"The workflow should be prediction first, then feedback. Current layout is unclear."
+timestamp,app_version,model_version,latency_ms,prediction,probability,feedback_score,feedback_comment
+2026-01-11T16:55:13,v1_ui,v1,87.56,1,0.8124,2,Not intuitive. I would prefer to see the model output first before rating it.
+2026-01-11T16:55:13,v1_ui,v2,279.96,1,0.5903,2,Not intuitive. I would prefer to see the model output first before rating it.
+2026-01-11T16:56:17,v1_ui,v1,30.04,1,0.7545,3,"The workflow should be the result of prediction first, then feedback. Current layout is unclear."
+2026-01-11T16:56:17,v1_ui,v2,195.6,1,0.6047,3,"The workflow should be the result of prediction first, then feedback. Current layout is unclear."
+2026-01-11T16:57:11,v1_ui,v1,26.45,1,0.7221,2,Confusing UI. I am asked to give feedback before seeing any prediction result.
+2026-01-11T16:57:11,v1_ui,v2,248.03,1,0.5729,2,Confusing UI. I am asked to give feedback before seeing any prediction result.
+2026-01-11T16:58:37,v2_ui,v1,42.25,0,0.2125,5,Improved UI. Prediction first then feedback is much clearer.
+2026-01-11T16:58:37,v2_ui,v2,244.73,0,0.3584,5,Improved UI. Prediction first then feedback is much clearer.
+2026-01-11T16:59:15,v2_ui,v1,25.78,0,0.4608,4,Much more intuitive than the previous version.
+2026-01-11T16:59:15,v2_ui,v2,204.81,0,0.3377,4,Much more intuitive than the previous version.

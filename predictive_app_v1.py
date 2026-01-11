@@ -106,7 +106,7 @@ if st.button("Predict with both models"):
         st.write("Latency (ms):", round(latency_v2, 2))
 
     # Log both predictions
-    log_prediction("v1", latency_v1, pred_v1, prob_v1, feedback_score, feedback_comment)
-    log_prediction("v2", latency_v2, pred_v2, prob_v2, feedback_score, feedback_comment)
+    log_prediction("v1_ui", "v1", latency_v1, pred_v1, prob_v1, feedback_score, feedback_comment)
+    log_prediction("v1_ui", "v2", latency_v2, pred_v2, prob_v2, feedback_score, feedback_comment)
 
     st.success("Logged predictions and feedback to logs/monitoring_logs.csv ✅")
