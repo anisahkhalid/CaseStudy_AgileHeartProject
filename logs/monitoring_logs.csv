@@ -9,3 +9,7 @@ timestamp,app_version,model_version,latency_ms,prediction,probability,feedback_s
 2026-01-11T16:58:37,v2_ui,v2,244.73,0,0.3584,5,Improved UI. Prediction first then feedback is much clearer.
 2026-01-11T16:59:15,v2_ui,v1,25.78,0,0.4608,4,Much more intuitive than the previous version.
 2026-01-11T16:59:15,v2_ui,v2,204.81,0,0.3377,4,Much more intuitive than the previous version.
+2026-01-11T18:22:17,v1_ui,v1,42.4,0,0.1082,4,Require improvent to provide the prediction before the feedback
+2026-01-11T18:22:17,v1_ui,v2,231.19,0,0.3174,4,Require improvent to provide the prediction before the feedback
+2026-01-11T18:22:45,v1_ui,v1,25.03,0,0.1082,4,Require improvement to provide the prediction before the feedback
+2026-01-11T18:22:45,v1_ui,v2,221.86,0,0.3174,4,Require improvement to provide the prediction before the feedback
