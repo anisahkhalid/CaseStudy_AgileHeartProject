@@ -1,3 +1,6 @@
+import streamlit as st
 import predictive_app
 
-predictive_app.render()
+st.set_page_config(page_title="Prediction (UI V2)", layout="wide")
+predictive_app.main()
+
