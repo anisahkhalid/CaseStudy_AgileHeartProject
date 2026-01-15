@@ -20,10 +20,8 @@ def make_input_df(inputs: dict) -> pd.DataFrame:
     return pd.DataFrame([inputs])
 
 
-def render():
-    st.set_page_config(page_title="Heart Disease Prediction (V1 vs V2)", layout="centered")
-
-    st.title("❤️ Heart Disease Prediction App")
+def main():
+    st.title("❤️ Heart Disease Prediction App (UI V2)")
     st.write("Compare predictions from **Model V1 (Logistic Regression)** and **Model V2 (Random Forest)**.")
 
     model_v1, model_v2 = load_models()
@@ -93,11 +91,11 @@ def render():
             "latency_v2": latency_v2,
         }
 
+    # Display results if available
     if "results" in st.session_state:
         r = st.session_state["results"]
 
         col1, col2 = st.columns(2)
-
         with col1:
             st.markdown("### Model V1 (Logistic Regression)")
             st.write("Prediction:", "Heart Disease" if r["pred_v1"] == 1 else "No Heart Disease")
@@ -113,7 +111,7 @@ def render():
         st.divider()
         st.subheader("Step 2: Submit Feedback & Log")
 
-        feedback_score = st.slider("Feedback Score (1=bad, 5=good)", 1, 5, 4)
+        feedback_score = st.slider("Feedback Score (Usability & Clarity)", 1, 5, 4)
         feedback_comment = st.text_area("Feedback Comment (optional)", "")
 
         if st.button("Submit Feedback & Log"):
@@ -123,3 +121,8 @@ def render():
             st.success("Saved feedback + predictions to logs/monitoring_logs.csv ✅")
     else:
         st.info("Click **Predict with both models** to generate results first.")
+
+
+if __name__ == "__main__":
+    st.set_page_config(page_title="Prediction (UI V2)", layout="wide")
+    main()
